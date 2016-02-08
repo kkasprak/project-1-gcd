@@ -2,8 +2,8 @@ Main: Beginning execution
 Main: datafile  'zin1.txt'
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Feb  6 18:09:13 2016
-TIME beginning             0.00 u         0.00 s   Res:      593920
+TIME CPU percent    0.00   0.00                    Mon Feb  8 12:48:01 2016
+TIME beginning             0.00 u         0.00 s   Res:      589824
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -12,12 +12,12 @@ TIME***********************************************************************
 Utils: open the input file 'zin1.txt'
 Utils: open succeeded for 'zin1.txt'
 start the computation
-create 10 records
-done with creation of 10 pairs
+create 100 records
+done with creation of 100 pairs
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Feb  6 18:09:13 2016
-TIME done creation         0.00 u         0.00 s   Res:      655360
+TIME CPU percent    0.00   0.00                    Mon Feb  8 12:48:01 2016
+TIME done creation         0.00 u         0.00 s   Res:      659456
 TIME done creation         0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -25,8 +25,8 @@ TIME***********************************************************************
 
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Feb  6 18:09:13 2016
-TIME before gcdtest        0.00 u         0.00 s   Res:      655360
+TIME CPU percent    0.00   0.00                    Mon Feb  8 12:48:01 2016
+TIME before gcdtest        0.00 u         0.00 s   Res:      659456
 TIME before gcdtest        0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -34,8 +34,8 @@ TIME***********************************************************************
 
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Feb  6 18:09:13 2016
-TIME bef binary true       0.00 u         0.00 s   Res:      659456
+TIME CPU percent    0.00   0.00                    Mon Feb  8 12:48:01 2016
+TIME bef binary true       0.00 u         0.00 s   Res:      663552
 TIME bef binary true       0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -43,33 +43,115 @@ TIME***********************************************************************
 
 In GCDTest
 Printing a and b
-a = 1
-b = 5
+a = 14
+b = 97
+While: a_odd is even
 Both ints now odd
-a_odd 1
-b_odd 5
+a_odd 7
+b_odd 97
 b is bigger 0
 a smaller0
-Big = 5
-Small = 1
+Big = 97
+Small = 7
 gcd before multiplying by min1
-k_a is 1
+k_a is 2
 k_b is 1
 gcd is1
-          0           1           5     -1      1     -1
-In GCDTest
-          1           0           2     -1      2     -1
-In GCDTest
-          2           0           8     -1      8     -1
-In GCDTest
-          3           2           2     -1      2     -1
+ShiftCount/getBitLength(a)50
+Bit length of a is: 4
+Bit length of b is: 7
+Shift count is: 2
+          0          14          97     -1      1     -1
 In GCDTest
 Printing a and b
-a = 10
-b = 8
+a = 69
+b = 34
+While: b_odd is even
+Both ints now odd
+a_odd 69
+b_odd 17
+a is bigger 0b smaller0Big = 69
+Small = 17
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)42.8571
+Bit length of a is: 7
+Bit length of b is: 6
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 80
+b = 88
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
 While: a_odd is even
 While: b_odd is even
 While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 5
+b_odd 11
+b is bigger 0
+a smaller0
+Big = 11
+Small = 5
+gcd before multiplying by min1
+k_a is 16
+k_b is 8
+gcd is8
+ShiftCount/getBitLength(a)0
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 66
+b = 34
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 33
+b_odd 17
+a is bigger 0b smaller0Big = 33
+Small = 17
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)85.7143
+Bit length of a is: 7
+Bit length of b is: 6
+Shift count is: 6
+In GCDTest
+Printing a and b
+a = 42
+b = 76
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 21
+b_odd 19
+a is bigger 0b smaller0Big = 21
+Small = 19
+gcd before multiplying by min1
+k_a is 2
+k_b is 4
+gcd is2
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 40
+b = 2
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
 While: b_odd is even
 Both ints now odd
 a_odd 5
@@ -77,85 +159,1827 @@ b_odd 1
 a is bigger 0b smaller0Big = 5
 Small = 1
 gcd before multiplying by min1
-k_a is 2
-k_b is 8
+k_a is 8
+k_b is 2
 gcd is2
-          4          10           8     -1      2     -1
+ShiftCount/getBitLength(a)16.6667
+Bit length of a is: 6
+Bit length of b is: 2
+Shift count is: 1
 In GCDTest
 Printing a and b
-a = 2
-b = 8
+a = 40
+b = 49
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 5
+b_odd 49
+b is bigger 0
+a smaller0
+Big = 49
+Small = 5
+gcd before multiplying by min1
+k_a is 8
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)16.6667
+Bit length of a is: 6
+Bit length of b is: 6
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 14
+b = 78
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 7
+b_odd 39
+b is bigger 0
+a smaller0
+Big = 39
+Small = 7
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)100
+Bit length of a is: 4
+Bit length of b is: 7
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 99
+b = 96
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 99
+b_odd 3
+a is bigger 0b smaller0Big = 99
+Small = 3
+gcd before multiplying by min3
+k_a is 1
+k_b is 32
+gcd is3
+ShiftCount/getBitLength(a)57.1429
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 3
+b = 86
+While: b_odd is even
+Both ints now odd
+a_odd 3
+b_odd 43
+b is bigger 0
+a smaller0
+Big = 43
+Small = 3
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 2
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 56
+b = 83
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 7
+b_odd 83
+b is bigger 0
+a smaller0
+Big = 83
+Small = 7
+gcd before multiplying by min1
+k_a is 8
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)50
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 3
+         10          56          83     -1      1     -1
+In GCDTest
+Printing a and b
+a = 57
+b = 18
+While: b_odd is even
+Both ints now odd
+a_odd 57
+b_odd 9
+a is bigger 0b smaller0Big = 57
+Small = 9
+gcd before multiplying by min3
+k_a is 1
+k_b is 2
+gcd is3
+ShiftCount/getBitLength(a)50
+Bit length of a is: 6
+Bit length of b is: 5
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 26
+b = 4
 While: a_odd is even
 While: b_odd is even
 While: b_odd is even
-While: b_odd is even
 Both ints now odd
-a_odd 1
+a_odd 13
 b_odd 1
-a is bigger 0b smaller0Big = 1
+a is bigger 0b smaller0Big = 13
 Small = 1
 gcd before multiplying by min1
 k_a is 2
-k_b is 8
+k_b is 4
 gcd is2
-          5           2           8     -1      2     -1
+ShiftCount/getBitLength(a)20
+Bit length of a is: 5
+Bit length of b is: 3
+Shift count is: 1
 In GCDTest
 Printing a and b
-a = 1
-b = 3
+a = 83
+b = 26
+While: b_odd is even
 Both ints now odd
-a_odd 1
-b_odd 3
-b is bigger 0
-a smaller0
-Big = 3
-Small = 1
+a_odd 83
+b_odd 13
+a is bigger 0b smaller0Big = 83
+Small = 13
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)14.2857
+Bit length of a is: 7
+Bit length of b is: 5
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 61
+b = 55
+Both ints now odd
+a_odd 61
+b_odd 55
+a is bigger 0b smaller0Big = 61
+Small = 55
 gcd before multiplying by min1
 k_a is 1
 k_b is 1
 gcd is1
-          6           1           3     -1      1     -1
+ShiftCount/getBitLength(a)16.6667
+Bit length of a is: 6
+Bit length of b is: 6
+Shift count is: 1
 In GCDTest
-          7           0           3     -1      3     -1
+Printing a and b
+a = 86
+b = 3
+While: a_odd is even
+Both ints now odd
+a_odd 43
+b_odd 3
+a is bigger 0b smaller0Big = 43
+Small = 3
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 2
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 44
+b = 66
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 11
+b_odd 33
+b is bigger 0
+a smaller0
+Big = 33
+Small = 11
+gcd before multiplying by min11
+k_a is 4
+k_b is 2
+gcd is22
+ShiftCount/getBitLength(a)0
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 32
+b = 21
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 1
+b_odd 21
+b is bigger 0
+a smaller0
+Big = 21
+Small = 1
+gcd before multiplying by min1
+k_a is 32
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 6
+Bit length of b is: 5
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 53
+b = 42
+While: b_odd is even
+Both ints now odd
+a_odd 53
+b_odd 21
+a is bigger 0b smaller0Big = 53
+Small = 21
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 6
+Bit length of b is: 6
+Shift count is: 6
+In GCDTest
+Printing a and b
+a = 16
+b = 79
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 1
+b_odd 79
+b is bigger 0
+a smaller0
+Big = 79
+Small = 1
+gcd before multiplying by min1
+k_a is 16
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 2
 In GCDTest
 Printing a and b
 a = 6
+b = 34
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 3
+b_odd 17
+b is bigger 0
+a smaller0
+Big = 17
+Small = 3
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 3
+Bit length of b is: 6
+Shift count is: 1
+         20           6          34     -1      2     -1
+In GCDTest
+Printing a and b
+a = 15
+b = 28
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 15
+b_odd 7
+a is bigger 0b smaller0Big = 15
+Small = 7
+gcd before multiplying by min1
+k_a is 1
+k_b is 4
+gcd is1
+ShiftCount/getBitLength(a)50
+Bit length of a is: 4
+Bit length of b is: 5
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 91
 b = 8
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 91
+b_odd 1
+a is bigger 0b smaller0Big = 91
+Small = 1
+gcd before multiplying by min1
+k_a is 1
+k_b is 8
+gcd is1
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 4
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 91
+b = 20
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 91
+b_odd 5
+a is bigger 0b smaller0Big = 91
+Small = 5
+gcd before multiplying by min1
+k_a is 1
+k_b is 4
+gcd is1
+ShiftCount/getBitLength(a)14.2857
+Bit length of a is: 7
+Bit length of b is: 5
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 2
+b = 95
+While: a_odd is even
+Both ints now odd
+a_odd 1
+b_odd 95
+b is bigger 0
+a smaller0
+Big = 95
+Small = 1
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)50
+Bit length of a is: 2
+Bit length of b is: 7
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 6
+b = 35
+While: a_odd is even
+Both ints now odd
+a_odd 3
+b_odd 35
+b is bigger 0
+a smaller0
+Big = 35
+Small = 3
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)133.333
+Bit length of a is: 3
+Bit length of b is: 6
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 90
+b = 2
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 45
+b_odd 1
+a is bigger 0b smaller0Big = 45
+Small = 1
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 2
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 12
+b = 93
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 3
+b_odd 93
+b is bigger 0
+a smaller0
+Big = 93
+Small = 3
+gcd before multiplying by min3
+k_a is 4
+k_b is 1
+gcd is3
+ShiftCount/getBitLength(a)0
+Bit length of a is: 4
+Bit length of b is: 7
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 80
+b = 38
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 5
+b_odd 19
+b is bigger 0
+a smaller0
+Big = 19
+Small = 5
+gcd before multiplying by min1
+k_a is 16
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)14.2857
+Bit length of a is: 7
+Bit length of b is: 6
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 19
+b = 28
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 19
+b_odd 7
+a is bigger 0b smaller0Big = 19
+Small = 7
+gcd before multiplying by min1
+k_a is 1
+k_b is 4
+gcd is1
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 5
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 17
+b = 86
+While: b_odd is even
+Both ints now odd
+a_odd 17
+b_odd 43
+b is bigger 0
+a smaller0
+Big = 43
+Small = 17
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 2
+         30          17          86     -1      1     -1
+In GCDTest
+In GCDTest
+Printing a and b
+a = 99
+b = 14
+While: b_odd is even
+Both ints now odd
+a_odd 99
+b_odd 7
+a is bigger 0b smaller0Big = 99
+Small = 7
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)57.1429
+Bit length of a is: 7
+Bit length of b is: 4
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 34
+b = 15
+While: a_odd is even
+Both ints now odd
+a_odd 17
+b_odd 15
+a is bigger 0b smaller0Big = 17
+Small = 15
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)0
+Bit length of a is: 6
+Bit length of b is: 4
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 16
+b = 59
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 1
+b_odd 59
+b is bigger 0
+a smaller0
+Big = 59
+Small = 1
+gcd before multiplying by min1
+k_a is 16
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)20
+Bit length of a is: 5
+Bit length of b is: 6
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 86
+b = 1
+While: a_odd is even
+Both ints now odd
+a_odd 43
+b_odd 1
+a is bigger 0b smaller0Big = 43
+Small = 1
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 1
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 71
+b = 11
+Both ints now odd
+a_odd 71
+b_odd 11
+a is bigger 0b smaller0Big = 71
+Small = 11
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)42.8571
+Bit length of a is: 7
+Bit length of b is: 4
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 8
+b = 78
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 1
+b_odd 39
+b is bigger 0
+a smaller0
+Big = 39
+Small = 1
+gcd before multiplying by min1
+k_a is 8
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)50
+Bit length of a is: 4
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 33
+b = 18
+While: b_odd is even
+Both ints now odd
+a_odd 33
+b_odd 9
+a is bigger 0b smaller0Big = 33
+Small = 9
+gcd before multiplying by min3
+k_a is 1
+k_b is 2
+gcd is3
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 6
+Bit length of b is: 5
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 65
+b = 47
+Both ints now odd
+a_odd 65
+b_odd 47
+a is bigger 0b smaller0Big = 65
+Small = 47
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 6
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 97
+b = 22
+While: b_odd is even
+Both ints now odd
+a_odd 97
+b_odd 11
+a is bigger 0b smaller0Big = 97
+Small = 11
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)71.4286
+Bit length of a is: 7
+Bit length of b is: 5
+Shift count is: 5
+         40          97          22     -1      1     -1
+In GCDTest
+Printing a and b
+a = 21
+b = 95
+Both ints now odd
+a_odd 21
+b_odd 95
+b is bigger 0
+a smaller0
+Big = 95
+Small = 21
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 5
+In GCDTest
+Printing a and b
+a = 82
+b = 34
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 41
+b_odd 17
+a is bigger 0b smaller0Big = 41
+Small = 17
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)42.8571
+Bit length of a is: 7
+Bit length of b is: 6
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 34
+b = 18
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 17
+b_odd 9
+a is bigger 0b smaller0Big = 17
+Small = 9
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)66.6667
+Bit length of a is: 6
+Bit length of b is: 5
+Shift count is: 4
+In GCDTest
+In GCDTest
+In GCDTest
+Printing a and b
+a = 14
+b = 32
 While: a_odd is even
 While: b_odd is even
 While: b_odd is even
 While: b_odd is even
+While: b_odd is even
+While: b_odd is even
 Both ints now odd
-a_odd 3
+a_odd 7
 b_odd 1
-a is bigger 0b smaller0Big = 3
+a is bigger 0b smaller0Big = 7
 Small = 1
 gcd before multiplying by min1
 k_a is 2
-k_b is 8
+k_b is 32
 gcd is2
-          8           6           8     -1      2     -1
+ShiftCount/getBitLength(a)0
+Bit length of a is: 4
+Bit length of b is: 6
+Shift count is: 0
 In GCDTest
 Printing a and b
-a = 3
-b = 9
+a = 52
+b = 12
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
 Both ints now odd
-a_odd 3
-b_odd 9
+a_odd 13
+b_odd 3
+a is bigger 0b smaller0Big = 13
+Small = 3
+gcd before multiplying by min1
+k_a is 4
+k_b is 4
+gcd is4
+ShiftCount/getBitLength(a)0
+Bit length of a is: 6
+Bit length of b is: 4
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 34
+b = 78
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 17
+b_odd 39
 b is bigger 0
 a smaller0
-Big = 9
+Big = 39
+Small = 17
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 79
+b = 46
+While: b_odd is even
+Both ints now odd
+a_odd 79
+b_odd 23
+a is bigger 0b smaller0Big = 79
+Small = 23
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)71.4286
+Bit length of a is: 7
+Bit length of b is: 6
+Shift count is: 5
+In GCDTest
+Printing a and b
+a = 84
+b = 23
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 21
+b_odd 23
+b is bigger 0
+a smaller0
+Big = 23
+Small = 21
+gcd before multiplying by min1
+k_a is 4
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 5
+Shift count is: 2
+         50          84          23     -1      1     -1
+In GCDTest
+Printing a and b
+a = 25
+b = 81
+Both ints now odd
+a_odd 25
+b_odd 81
+b is bigger 0
+a smaller0
+Big = 81
+Small = 25
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 11
+b = 46
+While: b_odd is even
+Both ints now odd
+a_odd 11
+b_odd 23
+b is bigger 0
+a smaller0
+Big = 23
+Small = 11
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)75
+Bit length of a is: 4
+Bit length of b is: 6
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 18
+b = 91
+While: a_odd is even
+Both ints now odd
+a_odd 9
+b_odd 91
+b is bigger 0
+a smaller0
+Big = 91
+Small = 9
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)120
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 6
+In GCDTest
+In GCDTest
+Printing a and b
+a = 61
+b = 41
+Both ints now odd
+a_odd 61
+b_odd 41
+a is bigger 0b smaller0Big = 61
+Small = 41
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)66.6667
+Bit length of a is: 6
+Bit length of b is: 6
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 75
+b = 3
+Both ints now odd
+a_odd 75
+b_odd 3
+a is bigger 0b smaller0Big = 75
 Small = 3
 gcd before multiplying by min3
 k_a is 1
 k_b is 1
 gcd is3
-          9           3           9     -1      3     -1
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 2
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 42
+b = 98
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 21
+b_odd 49
+b is bigger 0
+a smaller0
+Big = 49
+Small = 21
+gcd before multiplying by min7
+k_a is 2
+k_b is 2
+gcd is14
+ShiftCount/getBitLength(a)16.6667
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 18
+b = 89
+While: a_odd is even
+Both ints now odd
+a_odd 9
+b_odd 89
+b is bigger 0
+a smaller0
+Big = 89
+Small = 9
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 5
+In GCDTest
+Printing a and b
+a = 81
+b = 9
+Both ints now odd
+a_odd 81
+b_odd 9
+a is bigger 0b smaller0Big = 81
+Small = 9
+gcd before multiplying by min9
+k_a is 1
+k_b is 1
+gcd is9
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 4
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 21
+b = 89
+Both ints now odd
+a_odd 21
+b_odd 89
+b is bigger 0
+a smaller0
+Big = 89
+Small = 21
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 5
+         60          21          89     -1      1     -1
+In GCDTest
+Printing a and b
+a = 33
+b = 74
+While: b_odd is even
+Both ints now odd
+a_odd 33
+b_odd 37
+b is bigger 0
+a smaller0
+Big = 37
+Small = 33
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)83.3333
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 5
+In GCDTest
+Printing a and b
+a = 42
+b = 3
+While: a_odd is even
+Both ints now odd
+a_odd 21
+b_odd 3
+a is bigger 0b smaller0Big = 21
+Small = 3
+gcd before multiplying by min3
+k_a is 2
+k_b is 1
+gcd is3
+ShiftCount/getBitLength(a)0
+Bit length of a is: 6
+Bit length of b is: 2
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 22
+b = 62
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 11
+b_odd 31
+b is bigger 0
+a smaller0
+Big = 31
+Small = 11
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)20
+Bit length of a is: 5
+Bit length of b is: 6
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 68
+b = 70
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 17
+b_odd 35
+b is bigger 0
+a smaller0
+Big = 35
+Small = 17
+gcd before multiplying by min1
+k_a is 4
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)57.1429
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 98
+b = 74
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 49
+b_odd 37
+a is bigger 0b smaller0Big = 49
+Small = 37
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 97
+b = 2
+While: b_odd is even
+Both ints now odd
+a_odd 97
+b_odd 1
+a is bigger 0b smaller0Big = 97
+Small = 1
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)57.1429
+Bit length of a is: 7
+Bit length of b is: 2
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 45
+b = 32
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 45
+b_odd 1
+a is bigger 0b smaller0Big = 45
+Small = 1
+gcd before multiplying by min1
+k_a is 1
+k_b is 32
+gcd is1
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 6
+Bit length of b is: 6
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 31
+b = 22
+While: b_odd is even
+Both ints now odd
+a_odd 31
+b_odd 11
+a is bigger 0b smaller0Big = 31
+Small = 11
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)20
+Bit length of a is: 5
+Bit length of b is: 5
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 34
+b = 99
+While: a_odd is even
+Both ints now odd
+a_odd 17
+b_odd 99
+b is bigger 0
+a smaller0
+Big = 99
+Small = 17
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)50
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 16
+b = 78
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 1
+b_odd 39
+b is bigger 0
+a smaller0
+Big = 39
+Small = 1
+gcd before multiplying by min1
+k_a is 16
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 2
+         70          16          78     -1      2     -1
+In GCDTest
+Printing a and b
+a = 28
+b = 64
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 7
+b_odd 1
+a is bigger 0b smaller0Big = 7
+Small = 1
+gcd before multiplying by min1
+k_a is 4
+k_b is 64
+gcd is4
+ShiftCount/getBitLength(a)0
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 50
+b = 88
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 25
+b_odd 11
+a is bigger 0b smaller0Big = 25
+Small = 11
+gcd before multiplying by min1
+k_a is 2
+k_b is 8
+gcd is2
+ShiftCount/getBitLength(a)16.6667
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 24
+b = 67
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 3
+b_odd 67
+b is bigger 0
+a smaller0
+Big = 67
+Small = 3
+gcd before multiplying by min1
+k_a is 8
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 5
+In GCDTest
+Printing a and b
+a = 22
+b = 26
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 11
+b_odd 13
+b is bigger 0
+a smaller0
+Big = 13
+Small = 11
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)20
+Bit length of a is: 5
+Bit length of b is: 5
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 100
+b = 93
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 25
+b_odd 93
+b is bigger 0
+a smaller0
+Big = 93
+Small = 25
+gcd before multiplying by min1
+k_a is 4
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)85.7143
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 6
+In GCDTest
+Printing a and b
+a = 84
+b = 87
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 21
+b_odd 87
+b is bigger 0
+a smaller0
+Big = 87
+Small = 21
+gcd before multiplying by min3
+k_a is 4
+k_b is 1
+gcd is3
+ShiftCount/getBitLength(a)14.2857
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 27
+b = 67
+Both ints now odd
+a_odd 27
+b_odd 67
+b is bigger 0
+a smaller0
+Big = 67
+Small = 27
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 74
+b = 26
+While: a_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 37
+b_odd 13
+a is bigger 0b smaller0Big = 37
+Small = 13
+gcd before multiplying by min1
+k_a is 2
+k_b is 2
+gcd is2
+ShiftCount/getBitLength(a)28.5714
+Bit length of a is: 7
+Bit length of b is: 5
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 5
+b = 69
+Both ints now odd
+a_odd 5
+b_odd 69
+b is bigger 0
+a smaller0
+Big = 69
+Small = 5
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)200
+Bit length of a is: 3
+Bit length of b is: 7
+Shift count is: 6
+In GCDTest
+Printing a and b
+a = 33
+b = 54
+While: b_odd is even
+Both ints now odd
+a_odd 33
+b_odd 27
+a is bigger 0b smaller0Big = 33
+Small = 27
+gcd before multiplying by min3
+k_a is 1
+k_b is 2
+gcd is3
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 6
+Bit length of b is: 6
+Shift count is: 2
+         80          33          54     -1      3     -1
+In GCDTest
+Printing a and b
+a = 33
+b = 68
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 33
+b_odd 17
+a is bigger 0b smaller0Big = 33
+Small = 17
+gcd before multiplying by min1
+k_a is 1
+k_b is 4
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 6
+In GCDTest
+Printing a and b
+a = 32
+b = 28
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 1
+b_odd 7
+b is bigger 0
+a smaller0
+Big = 7
+Small = 1
+gcd before multiplying by min1
+k_a is 32
+k_b is 4
+gcd is4
+ShiftCount/getBitLength(a)0
+Bit length of a is: 6
+Bit length of b is: 5
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 19
+b = 39
+Both ints now odd
+a_odd 19
+b_odd 39
+b is bigger 0
+a smaller0
+Big = 39
+Small = 19
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 6
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 9
+b = 32
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 9
+b_odd 1
+a is bigger 0b smaller0Big = 9
+Small = 1
+gcd before multiplying by min1
+k_a is 1
+k_b is 32
+gcd is1
+ShiftCount/getBitLength(a)50
+Bit length of a is: 4
+Bit length of b is: 6
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 29
+b = 13
+Both ints now odd
+a_odd 29
+b_odd 13
+a is bigger 0b smaller0Big = 29
+Small = 13
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)80
+Bit length of a is: 5
+Bit length of b is: 4
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 48
+b = 65
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 3
+b_odd 65
+b is bigger 0
+a smaller0
+Big = 65
+Small = 3
+gcd before multiplying by min1
+k_a is 16
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)33.3333
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 62
+b = 35
+While: a_odd is even
+Both ints now odd
+a_odd 31
+b_odd 35
+b is bigger 0
+a smaller0
+Big = 35
+Small = 31
+gcd before multiplying by min1
+k_a is 2
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)16.6667
+Bit length of a is: 6
+Bit length of b is: 6
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 1
+b = 11
+Both ints now odd
+a_odd 1
+b_odd 11
+b is bigger 0
+a smaller0
+Big = 11
+Small = 1
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)100
+Bit length of a is: 1
+Bit length of b is: 4
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 75
+b = 84
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 75
+b_odd 21
+a is bigger 0b smaller0Big = 75
+Small = 21
+gcd before multiplying by min3
+k_a is 1
+k_b is 4
+gcd is3
+ShiftCount/getBitLength(a)0
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 8
+b = 15
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 1
+b_odd 15
+b is bigger 0
+a smaller0
+Big = 15
+Small = 1
+gcd before multiplying by min1
+k_a is 8
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)0
+Bit length of a is: 4
+Bit length of b is: 4
+Shift count is: 0
+         90           8          15     -1      1     -1
+In GCDTest
+Printing a and b
+a = 40
+b = 5
+While: a_odd is even
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 5
+b_odd 5
+a is bigger 0b smaller0Big = 5
+Small = 5
+gcd before multiplying by min5
+k_a is 8
+k_b is 1
+gcd is5
+ShiftCount/getBitLength(a)0
+Bit length of a is: 6
+Bit length of b is: 3
+Shift count is: 0
+In GCDTest
+Printing a and b
+a = 73
+b = 98
+While: b_odd is even
+Both ints now odd
+a_odd 73
+b_odd 49
+a is bigger 0b smaller0Big = 73
+Small = 49
+gcd before multiplying by min1
+k_a is 1
+k_b is 2
+gcd is1
+ShiftCount/getBitLength(a)42.8571
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 62
+b = 84
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 31
+b_odd 21
+a is bigger 0b smaller0Big = 31
+Small = 21
+gcd before multiplying by min1
+k_a is 2
+k_b is 4
+gcd is2
+ShiftCount/getBitLength(a)66.6667
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 44
+b = 87
+While: a_odd is even
+While: a_odd is even
+Both ints now odd
+a_odd 11
+b_odd 87
+b is bigger 0
+a smaller0
+Big = 87
+Small = 11
+gcd before multiplying by min1
+k_a is 4
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)66.6667
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 4
+In GCDTest
+Printing a and b
+a = 26
+b = 20
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 13
+b_odd 5
+a is bigger 0b smaller0Big = 13
+Small = 5
+gcd before multiplying by min1
+k_a is 2
+k_b is 4
+gcd is2
+ShiftCount/getBitLength(a)60
+Bit length of a is: 5
+Bit length of b is: 5
+Shift count is: 3
+In GCDTest
+Printing a and b
+a = 31
+b = 36
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 31
+b_odd 9
+a is bigger 0b smaller0Big = 31
+Small = 9
+gcd before multiplying by min1
+k_a is 1
+k_b is 4
+gcd is1
+ShiftCount/getBitLength(a)40
+Bit length of a is: 5
+Bit length of b is: 6
+Shift count is: 2
+In GCDTest
+Printing a and b
+a = 14
+b = 20
+While: a_odd is even
+While: b_odd is even
+While: b_odd is even
+Both ints now odd
+a_odd 7
+b_odd 5
+a is bigger 0b smaller0Big = 7
+Small = 5
+gcd before multiplying by min1
+k_a is 2
+k_b is 4
+gcd is2
+ShiftCount/getBitLength(a)25
+Bit length of a is: 4
+Bit length of b is: 5
+Shift count is: 1
+In GCDTest
+Printing a and b
+a = 77
+b = 73
+Both ints now odd
+a_odd 77
+b_odd 73
+a is bigger 0b smaller0Big = 77
+Small = 73
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)71.4286
+Bit length of a is: 7
+Bit length of b is: 7
+Shift count is: 5
+In GCDTest
+Printing a and b
+a = 35
+b = 97
+Both ints now odd
+a_odd 35
+b_odd 97
+b is bigger 0
+a smaller0
+Big = 97
+Small = 35
+gcd before multiplying by min1
+k_a is 1
+k_b is 1
+gcd is1
+ShiftCount/getBitLength(a)16.6667
+Bit length of a is: 6
+Bit length of b is: 7
+Shift count is: 1
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Feb  6 18:09:13 2016
+TIME CPU percent    0.00   0.00                    Mon Feb  8 12:48:01 2016
 TIME aft binary true       0.00 u         0.00 s   Res:      663552
-TIME aft binary true       0.00 u_t       0.00 s_t
+TIME aft binary true       0.01 u_t       0.00 s_t
 TIME***********************************************************************
 
 
@@ -163,225 +1987,48 @@ TIME***********************************************************************
 done with the computation
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Feb  6 18:09:13 2016
+TIME CPU percent    0.00   0.00                    Mon Feb  8 12:48:01 2016
 TIME after gcdtest         0.00 u         0.00 s   Res:      663552
-TIME after gcdtest         0.00 u_t       0.00 s_t
+TIME after gcdtest         0.01 u_t       0.00 s_t
 TIME***********************************************************************
 
 
 
 Frequencies of bit lengths
-0     20
+0     2
+1     2
+2     8
+3     5
+4     19
+5     37
+6     52
+7     75
 
 Frequencies of shift fractions
-0     0
-1     0
-2     0
-3     0
-4     0
-5     0
-6     0
-7     0
-8     0
-9     0
-10     0
-11     0
-12     0
-13     0
-14     0
-15     0
-16     0
-17     0
-18     0
-19     0
-20     0
-21     0
-22     0
-23     0
-24     0
-25     0
-26     0
-27     0
-28     0
-29     0
-30     0
-31     0
-32     0
-33     0
-34     0
-35     0
-36     0
-37     0
-38     0
-39     0
-40     0
-41     0
-42     0
-43     0
-44     0
-45     0
-46     0
-47     0
-48     0
-49     0
-50     0
-51     0
-52     0
-53     0
-54     0
-55     0
-56     0
-57     0
-58     0
-59     0
-60     0
-61     0
-62     0
-63     0
-64     0
-65     0
-66     0
-67     0
-68     0
-69     0
-70     0
-71     0
-72     0
-73     0
-74     0
-75     0
-76     0
-77     0
-78     0
-79     0
-80     0
-81     0
-82     0
-83     0
-84     0
-85     0
-86     0
-87     0
-88     0
-89     0
-90     0
-91     0
-92     0
-93     0
-94     0
-95     0
-96     0
-97     0
-98     0
-99     0
-100     0
-101     0
-102     0
-103     0
-104     0
-105     0
-106     0
-107     0
-108     0
-109     0
-110     0
-111     0
-112     0
-113     0
-114     0
-115     0
-116     0
-117     0
-118     0
-119     0
-120     0
-121     0
-122     0
-123     0
-124     0
-125     0
-126     0
-127     0
-128     0
-129     0
-130     0
-131     0
-132     0
-133     0
-134     0
-135     0
-136     0
-137     0
-138     0
-139     0
-140     0
-141     0
-142     0
-143     0
-144     0
-145     0
-146     0
-147     0
-148     0
-149     0
-150     0
-151     0
-152     0
-153     0
-154     0
-155     0
-156     0
-157     0
-158     0
-159     0
-160     0
-161     0
-162     0
-163     0
-164     0
-165     0
-166     0
-167     0
-168     0
-169     0
-170     0
-171     0
-172     0
-173     0
-174     0
-175     0
-176     0
-177     0
-178     0
-179     0
-180     0
-181     0
-182     0
-183     0
-184     0
-185     0
-186     0
-187     0
-188     0
-189     0
-190     0
-191     0
-192     0
-193     0
-194     0
-195     0
-196     0
-197     0
-198     0
-199     0
-200     0
+0     12
+14     8
+16     7
+20     4
+25     1
+28     21
+33     7
+40     2
+42     6
+50     2
+57     7
+60     1
+66     3
+71     8
+80     1
+85     5
+100     1
 
 Main: Ending execution
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Feb  6 18:09:13 2016
-TIME ending                0.00 u         0.00 s   Res:      679936
-TIME ending                0.00 u_t       0.00 s_t
+TIME CPU percent    0.00   0.00                    Mon Feb  8 12:48:01 2016
+TIME ending                0.00 u         0.00 s   Res:      663552
+TIME ending                0.01 u_t       0.00 s_t
 TIME***********************************************************************
 
 

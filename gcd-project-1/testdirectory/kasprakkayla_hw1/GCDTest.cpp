@@ -61,7 +61,6 @@ string GCDTest::convertToBinary(LONG n)
       n = n/2;
     }
   }
-
   return bits;
 }
 
@@ -136,6 +135,7 @@ LONG GCDTest::gcdBinary(LONG a, LONG b)
   LONG small = 0;
   LONG temp = 0;
   LONG gcd = 0;
+  double shiftCount = 0.0;
   cout << "In GCDTest" << endl;
 
   if (a == b)
@@ -193,6 +193,7 @@ LONG GCDTest::gcdBinary(LONG a, LONG b)
     while(big % 2 == 0 && big != 0)//while big is zero
     {
       big = big >> 1;
+      shiftCount++;//Increments for each free shift
     }
     if(big < small)
     {
@@ -213,6 +214,24 @@ LONG GCDTest::gcdBinary(LONG a, LONG b)
     cout << "k_b is " << k_b << endl;
     gcd = (gcd * min(k_a, k_b));
     cout << "gcd is" << gcd << endl;
+    cout << "ShiftCount/getBitLength(a)" << (shiftCount/double(getBitLength(a)))*100 << endl;
+
+    cout << "Bit length of a is: " << double(getBitLength(a)) << endl;
+    cout << "Bit length of b is: " << double(getBitLength(b)) << endl;
+    cout << "Shift count is: " << shiftCount << endl;
+
+    int index = 0;
+
+    if(getBitLength(a) >= getBitLength(b))
+    {
+      index = (shiftCount/(double(getBitLength(a))))*100;
+    }
+    else
+    {
+      index = (shiftCount/(double(getBitLength(b))))*100;
+    }
+
+    ++shiftFracFreqs.at(index);
     return gcd;
     
   }
@@ -283,14 +302,14 @@ int GCDTest::getBitLength(LONG n)
 {
   int length = 0;
   int mask = 2147483647;
-  string binaryString;
+  string binaryString = "";
 
   if (0 == n) return 0; // this is a fudge
 
   if (n < 0) return 32;
 
   binaryString = convertToBinary(n);
-  //length = binaryString.size();
+  length = binaryString.size();
 
   return length;
 }
@@ -343,7 +362,10 @@ string GCDTest::stringifyShiftFracFreqs()
 
   for(int i = 0; i < shiftFracFreqs.size(); i++)
   {
+    if(shiftFracFreqs.at(i) != 0)
+    {
     s = s + to_string(i) + "     " + to_string(shiftFracFreqs.at(i)) + "\n";
+    }
   }
 
   return s;
