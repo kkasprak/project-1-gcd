@@ -14,7 +14,7 @@
  * Date last modified: 8 February 2016
  *
  **/
- 
+
  #include "GCDTest.h"
 
 /******************************************************************************
@@ -61,16 +61,14 @@ string GCDTest::convertToBinary(LONG n)
   string bits = "";
   while (n != 0)
   {
-    if (n % 2 == 0)//remained of 0
+    if (n % 2 == 0)//remainder of 0 after dividing by 2
     {
             bits = "0" + bits;
-            //n = n/2;
             n = n >> 1;//n/2
         }
         else
         {
-            bits = "1" + bits;//remained of 1
-            //n = n/2;
+            bits = "1" + bits; //remainder of 1 after dividing by 2
             n = n >> 1;//n/2
         }
     }
@@ -229,7 +227,6 @@ string GCDTest::formatProgress(LONG sub, LONG a, LONG b,
  **/
 LONG GCDTest::gcdBinary(LONG a, LONG b)
 {
-    //TODO
     LONG k_a = 1;
     LONG k_b = 1;
     LONG a_odd = a;
@@ -255,15 +252,15 @@ LONG GCDTest::gcdBinary(LONG a, LONG b)
     //Given nonnegative integers a and b
     //Remove the k_a powers of 2 in a to produce a_odd
     //Remove the k_b powers of 2 in b to produce b_odd
-    while (a_odd % 2 == 0 && a_odd != 0)//a is even
+    while (a_odd % 2 == 0 && a_odd != 0) //a is even
     {
         k_a = (k_a * 2);
-        a_odd = (a_odd >> 1);//a_odd/2
+        a_odd = (a_odd >> 1); //a_odd/2
     }
-    while (b_odd % 2 == 0 && b_odd !=0)//b is even
+    while (b_odd % 2 == 0 && b_odd !=0) //b is even
     {
         k_b = (k_b * 2);
-        b_odd = (b_odd >> 1);//b_odd/2
+        b_odd = (b_odd >> 1); //b_odd/2
     }
 
     //Assign the larger value to 'big' and the 
@@ -287,8 +284,8 @@ LONG GCDTest::gcdBinary(LONG a, LONG b)
         //Check for free shifts
         while(big % 2 == 0 && big != 0)
         {
-            big = big >> 1;//shift
-            shiftCount++;//Increments for each free shift
+            big = big >> 1; //shift
+            shiftCount++; //Increments for each free shift
         }
         if(big < small)
         {
@@ -402,7 +399,7 @@ LONG GCDTest::gcdNaive(LONG a, LONG b)
  * Parameters:
  *   number 'n' of type 'LONG'
  * Returns::
- *   'int' 'length' containing 
+ *   'int' 'length' containing  the length of the string of bits
  * 
  **/
 int GCDTest::getBitLength(LONG n)
@@ -411,7 +408,7 @@ int GCDTest::getBitLength(LONG n)
     int mask = 2147483647;
     string binaryString = "";
     
-    if (0 == n) return 0; // this is a fudge
+    if (0 == n) return 0; //this is a fudge
     
     if (n < 0) return 32;
     
