@@ -2,7 +2,7 @@ Main: Beginning execution
 Main: datafile  'zdatafile.txt'
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Feb  8 21:10:10 2016
+TIME CPU percent    0.00   0.00                    Mon Feb  8 22:38:02 2016
 TIME beginning             0.00 u         0.00 s   Res:      704512
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
@@ -16,8 +16,8 @@ create 10 records
 done with creation of 10 pairs
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Feb  8 21:10:10 2016
-TIME done creation         0.00 u         0.00 s   Res:      774144
+TIME CPU percent    0.00   0.00                    Mon Feb  8 22:38:02 2016
+TIME done creation         0.00 u         0.00 s   Res:      749568
 TIME done creation         0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -25,8 +25,8 @@ TIME***********************************************************************
 
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Feb  8 21:10:10 2016
-TIME before gcdtest        0.00 u         0.00 s   Res:      774144
+TIME CPU percent    0.00   0.00                    Mon Feb  8 22:38:02 2016
+TIME before gcdtest        0.00 u         0.00 s   Res:      753664
 TIME before gcdtest        0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -34,8 +34,8 @@ TIME***********************************************************************
 
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Feb  8 21:10:10 2016
-TIME bef binary true       0.00 u         0.00 s   Res:      774144
+TIME CPU percent    0.00   0.00                    Mon Feb  8 22:38:02 2016
+TIME bef binary true       0.00 u         0.00 s   Res:      753664
 TIME bef binary true       0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -53,8 +53,8 @@ TIME***********************************************************************
           9           3           9     -1      3     -1
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Feb  8 21:10:10 2016
-TIME aft binary true       0.00 u         0.00 s   Res:      778240
+TIME CPU percent    0.00   0.00                    Mon Feb  8 22:38:02 2016
+TIME aft binary true       0.00 u         0.00 s   Res:      757760
 TIME aft binary true       0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -63,8 +63,8 @@ TIME***********************************************************************
 done with the computation
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Feb  8 21:10:10 2016
-TIME after gcdtest         0.00 u         0.00 s   Res:      778240
+TIME CPU percent    0.00   0.00                    Mon Feb  8 22:38:02 2016
+TIME after gcdtest         0.00 u         0.00 s   Res:      757760
 TIME after gcdtest         0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -85,8 +85,8 @@ Frequencies of shift fractions
 Main: Ending execution
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Feb  8 21:10:10 2016
-TIME ending                0.00 u         0.00 s   Res:      778240
+TIME CPU percent    0.00   0.00                    Mon Feb  8 22:38:02 2016
+TIME ending                0.00 u         0.00 s   Res:      757760
 TIME ending                0.00 u_t       0.00 s_t
 TIME***********************************************************************
 

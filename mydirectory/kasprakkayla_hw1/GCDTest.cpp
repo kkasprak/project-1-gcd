@@ -64,12 +64,14 @@ string GCDTest::convertToBinary(LONG n)
     if (n % 2 == 0)//remainder of 0 after dividing by 2
     {
             bits = "0" + bits;
-            n = n >> 1;//n/2
+            //n = n >> 1;//n/2
+            n = n/2;
         }
         else
         {
             bits = "1" + bits; //remainder of 1 after dividing by 2
-            n = n >> 1;//n/2
+            //n = n >> 1;//n/2
+            n = n/2;
         }
     }
     return bits;
@@ -395,6 +397,7 @@ LONG GCDTest::gcdNaive(LONG a, LONG b)
  * NOTE: We handle exception of n being 0 by returning a bit length of 0.
  * NOTE: We handle the exception of n being negative by returning a bit length
  *      of 32.
+ * NOTE: If n equals 1, the function returns a bit length of 1.
  *
  * Parameters:
  *   number 'n' of type 'LONG'
@@ -411,6 +414,8 @@ int GCDTest::getBitLength(LONG n)
     if (0 == n) return 0; //this is a fudge
     
     if (n < 0) return 32;
+
+    if (n == 1) return 1;
     
     binaryString = convertToBinary(n);
     length = binaryString.size();
